@@ -21,7 +21,7 @@ const Header = ({ navBar = true, setNavBar } : HeaderProps) => {
             {navBar && <BiChevronLeft />}
             {!navBar && <BiChevronRight />}
         </button>
-        {width! && <SearchBar />}
+        {width! > 768 && <SearchBar />}
         <LoginRegister />
     </header>
   )
