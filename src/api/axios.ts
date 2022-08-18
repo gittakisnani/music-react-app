@@ -9,8 +9,7 @@ export default axios.create({
 export const axiosPrivate = axios.create({
     baseURL: BASE_URL,
     headers: { 
-        'Content-Type': 'application/json',
-        'origin': "https://gittakisnani.github.io/music-react-app/"
+        'Content-Type': 'application/json'
     },
     withCredentials: true
 })
