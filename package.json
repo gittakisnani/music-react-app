@@ -2,7 +2,7 @@
   "name": "music-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gittakisnani.github.io/music-app/",
+  "homepage": "https://gittakisnani.github.io/music-app",
   "dependencies": {
     "@headlessui/react": "^1.6.6",
     "@reduxjs/toolkit": "^1.8.3",
