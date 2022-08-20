@@ -14,7 +14,7 @@ const RequireSP = () => {
     const RES_TYPE = 'token'
     
     const API_URL = `${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RES_TYPE}`
-    const AUTH_URL = `https://accounts.spotify.com/authorize?client_id=f70ea4f24b4547cba2eb2d08e9e21d2a&response_type=token&redirect_uri=https://gittakisnani.github.io/music-react-app/#/&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state`
+    const AUTH_URL = `https://accounts.spotify.com/authorize?client_id=f70ea4f24b4547cba2eb2d08e9e21d2a&response_type=token&redirect_uri=https://gittakisnani.github.io/music-react-app/&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state`
     useEffect(() => {
         const hash = window.location.hash
         let token:any = localStorage.getItem('token')
