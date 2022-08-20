@@ -8,7 +8,7 @@ const RequireSP = () => {
     const location = useLocation()
     const from = location?.pathname || '/'
 
-    const REDIRECT_URI = `http://localhost:3000${from}`
+    const REDIRECT_URI = `https://gittakisnani.github.io/music-react-app/#${from}`
     const CLIENT_ID = 'f70ea4f24b4547cba2eb2d08e9e21d2a'
     const AUTH_ENDPOINT = 'https://accounts.spotify.com/authorize'
     const RES_TYPE = 'token'
