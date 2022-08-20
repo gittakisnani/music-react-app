@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASE_URL = "https://fast-scrubland-49668.herokuapp.com/"
+const BASE_URL = process.env.REACT_APP_REST_API
 
 export default axios.create({
     baseURL: BASE_URL

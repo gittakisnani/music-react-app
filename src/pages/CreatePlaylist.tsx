@@ -47,24 +47,9 @@ const CreatePlaylist = () => {
                 <div className="flex flex-col gap-2 flex-1 overflow-hidden">
                     <h4 className="text-lg">Add musics</h4>
                         <ul className="flex-1 w-full flex flex-col gap-1 overflow-y-scroll form">
-                            <AddMusicPlaylist musicName="Here we go" />
-                            <AddMusicPlaylist musicName="Here we go" />
-                            <AddMusicPlaylist musicName="Here we go" />
-                            <AddMusicPlaylist musicName="Here we go" />
-                            <AddMusicPlaylist musicName="Here we go" />
-                            <AddMusicPlaylist musicName="Here we go" />
-                            <AddMusicPlaylist musicName="Here we go" />
-                            <AddMusicPlaylist musicName="Here we go" />
-                            <AddMusicPlaylist musicName="Here we go" />
-                            <AddMusicPlaylist musicName="Here we go" />
-                            <AddMusicPlaylist musicName="Here we go" />
-                            <AddMusicPlaylist musicName="Here we go" />
-                            <AddMusicPlaylist musicName="Here we go" />
-                            <AddMusicPlaylist musicName="Here we go" />
-                            <AddMusicPlaylist musicName="Here we go" />
-                            <AddMusicPlaylist musicName="Here we go" />
-                            <AddMusicPlaylist musicName="Here we go" />
-                            <AddMusicPlaylist musicName="Here we go" />
+                            {Array(10).fill('Here we go').map((musicName, index) => (
+                                <AddMusicPlaylist key={index} musicName={musicName} />
+                            ))}
                         </ul>
                 </div>
                 <button 
