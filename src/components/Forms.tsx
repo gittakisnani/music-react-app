@@ -5,7 +5,6 @@ import { BsCheckLg, BsFacebook } from "react-icons/bs";
 import { FaLock, FaUserAlt } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { MdEmail } from "react-icons/md";
-import { useDispatch } from "react-redux";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import axios from '../api/axios'
 import { useAuth } from "../context/AuthContext";
@@ -88,7 +87,7 @@ const RegisterForm = ({ agree, setAgree }: RegisterProps) => {
         }
     }
   return (
-    <div className="bg-[#181818] flex-1 text-[#eef2f7]/80 form p-14 h-full overflow-y-scroll md:overflow-hidden">
+    <div className="bg-[#181818] flex-1 text-[#eef2f7]/80 form p-6 md:p-14 pt-12 h-full overflow-y-scroll md:overflow-hidden">
             <h3 className="mb-10 font-medium text-2xl">Register</h3>
             <p className="font-light">Register and discover the latest musics!</p>
             <div className="registration-wrapper flex flex-col gap-2 items-center my-4">
@@ -182,10 +181,6 @@ export const LoginForm = () => {
     const location = useLocation()
     const navigate = useNavigate()
     const { auth, setAuth, setPersist, persist } = useAuth();
-    const dispatch = useDispatch();
-
-
-    
 
     const togglePersist = () => setPersist!(!persist)
 
@@ -235,7 +230,7 @@ export const LoginForm = () => {
     }
 
     return (
-        <div className="bg-[#181818] flex-1 text-[#eef2f7]/80 form p-14 h-full overflow-y-scroll md:overflow-hidden">
+        <div className="bg-[#181818] flex-1 text-[#eef2f7]/80 form p-6 md:p-14 pt-12 h-full overflow-y-scroll md:overflow-hidden">
             <h3 className="mb-10 font-medium text-2xl">Login</h3>
             <p className="font-light">Login to your account and enjoy the latest musics!</p>
             <div className="login-wrapper flex flex-col gap-2 items-center my-10">

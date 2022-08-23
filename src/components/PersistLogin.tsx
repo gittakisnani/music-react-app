@@ -7,7 +7,7 @@ import Loader from "./Loader";
 
 const PersistLogin = () => {
     const [isLoading, setIsLoading] = useState(true);
-    const { auth, persist, setAuth } = useAuth()
+    const { auth, persist } = useAuth()
     const refresh = useRefreshToken()
 
     useEffect(() => {
