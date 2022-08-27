@@ -12,8 +12,6 @@ const Register = () => {
     document.title = 'Register'
     const { width } = useWindowSize();
     const [agree, setAgree] = useState(false)
-    // const dispatch = useDispatch()
-
 
   return (
     <div className="flex overflow-hidden h-screen w-screen">

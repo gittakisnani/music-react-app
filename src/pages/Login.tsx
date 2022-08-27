@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import useWindowSize from "../hooks/useWindowSize"
 import { LoginForm } from '../components/Forms'
 const SLIDES_IMAGES_SRC = [
@@ -10,7 +9,6 @@ const Login = () => {
   document.title = 'Login'
 
   const { width } = useWindowSize()
-  const [rememberMe, setRememberMe] = useState(false)
   return (
     <div className='flex h-screen w-screen relative overflow-hidden'>
       <h3 

@@ -87,7 +87,7 @@ const RegisterForm = ({ agree, setAgree }: RegisterProps) => {
         }
     }
   return (
-    <div className="bg-[#181818] flex-1 text-[#eef2f7]/80 form p-6 md:p-14 pt-12 h-full overflow-y-scroll md:overflow-hidden">
+    <div className="bg-[#181818] flex-1 text-[#eef2f7]/80 form p-6 md:p-14 pt-12 h-full overflow-y-scroll">
             <h3 className="mb-10 font-medium text-2xl">Register</h3>
             <p className="font-light">Register and discover the latest musics!</p>
             <div className="registration-wrapper flex flex-col gap-2 items-center my-4">
