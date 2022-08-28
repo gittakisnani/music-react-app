@@ -9,7 +9,7 @@ type Props = {
 
 const Layout = ({ navBar, setNavBar }: Props) => {
   return (
-    <div className='h-screen w-screen overflow-hidden flex relative'>
+    <div className='h-screen w-full max-w-[1366px] mx-auto overflow-hidden flex relative'>
       <NavBar navBar={navBar} setNavBar={() => setNavBar(!navBar)} />
       <div className='flex-1 flex flex-col'>
         <Header navBar={navBar} setNavBar={() => setNavBar(!navBar)} />
