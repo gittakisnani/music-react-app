@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 const RequireSP = () => {
     const [token, setToken] = useState<string | undefined>();
-    const REDIRECT_URL = 'gittakisnani.github.io/music-react-app/#'
+    const REDIRECT_URL = 'https://gittakisnani.github.io/music-react-app/#/callback/'
 
     const AUTH_URL = `https://accounts.spotify.com/authorize?client_id=${process.env.REACT_APP_CLIENT_ID}&response_type=${process.env.REACT_APP_RES_TYPE}&redirect_uri=${REDIRECT_URL}&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state`
     useEffect(() => {
